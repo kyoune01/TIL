@@ -49,11 +49,13 @@ if ( exponent >= 0 ) {
 他の人とは君が書いたコードをレビューする先輩だったり、一ヶ月後に運用で修正をかける未来の自分かもしれない  
 少なくとも全ての他の人が最短でコードを理解し、目的が達成できる状態でコードを保つことが良いコードを書くことであるといえます  
 
-<br>
-<br>
-設問：感覚と概念を頭に入るまで、上記の定理を読み合わせしてください
-<br>
-<br>
+## 全体
+計5ファイルに分けてリーダブルコードの内容をまとめていく
+- [01.コードの美しさ](https://github.com/kyoune01/TIL/blob/master/readable_code/01_beautifulCode.md)
+- [02.コードの思いやり](https://github.com/kyoune01/TIL/blob/master/readable_code/02_considerationCode.md)
+- 
+- 
+- 
 
 ## 補足
 自分の理解だけでなく社内勉強会用の資料として作成  
