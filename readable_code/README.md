@@ -50,17 +50,16 @@ if ( exponent >= 0 ) {
 少なくとも全ての他の人が最短でコードを理解し、目的が達成できる状態でコードを保つことが良いコードを書くことであるといえます  
 
 ## 全体
-計5ファイルに分けてリーダブルコードの内容をまとめていく
-- [01.コードの美しさ](https://github.com/kyoune01/TIL/blob/master/readable_code/01_beautifulCode.md)
-- [02.コードの思いやり](https://github.com/kyoune01/TIL/blob/master/readable_code/02_considerationCode.md)
-- 
-- 
-- 
+計5ファイルに分けてまとめます
+- [01.美しさ](https://github.com/kyoune01/TIL/blob/master/readable_code/01_beauty.md)
+- [02.思いやり](https://github.com/kyoune01/TIL/blob/master/readable_code/02_consideration.md)
+- [03.命名](https://github.com/kyoune01/TIL/blob/master/readable_code/03_naming.md)
+- [04.コメント](https://github.com/kyoune01/TIL/blob/master/readable_code/04_comment.md)
+- [05.ロジック](https://github.com/kyoune01/TIL/blob/master/readable_code/05_logic.md)
 
 ## 補足
 自分の理解だけでなく社内勉強会用の資料として作成  
-計3回に分けてリーダブルコードの内容を書籍を持ってない人でも理解でき、  
-例をフロント寄りに噛み砕いて伝える予定  
+計3回に分けてリーダブルコードの内容を書籍を持ってない人でも理解できるように、例をフロント寄りに噛み砕いて伝える予定  
 
 > リーダブルコード ―より良いコードを書くためのシンプルで実践的なテクニック
 > https://www.amazon.co.jp/dp/4873115655/ref=cm_sw_r_tw_dp_U_x_1s.-CbTGCJJ87
