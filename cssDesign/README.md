@@ -125,20 +125,20 @@
 ```CSS
 .l-container-12 { ... }
 
-l-grid-01 { ... }
-l-grid-02 { ... }
+.l-grid-01 { ... }
+.l-grid-02 { ... }
 ...
-l-grid-11 { ... }
-l-grid-12 { ... }
+.l-grid-11 { ... }
+.l-grid-12 { ... }
 
-t-boder-red { ... }
-t-boder-gold { ... }
+.t-boder-red { ... }
+.t-boder-gold { ... }
 ...
 
-card { ... }
-card-executive { ... }
-card-title { ... }
-card-text { ... }
+.card { ... }
+.card-executive { ... }
+.card-title { ... }
+.card-text { ... }
 ```
 
 ## FLOCSS
