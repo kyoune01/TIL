@@ -6,13 +6,10 @@
 など
 
 ### 参考
-各CSS設計手法を取り入れる上でのメリット・デメリットをまとめてみた
-https://qiita.com/nezurika/items/a964e21d3596b0ee4c9a
-
-BEMによるフロントエンドの設計 第1回 基本概念とルール
-https://app.codegrid.net/entry/bem-basic-1
-
-
+- [各CSS設計手法を取り入れる上でのメリット・デメリットをまとめてみた](https://qiita.com/nezurika/items/a964e21d3596b0ee4c9a)
+- [BEMによるフロントエンドの設計 第1回 基本概念とルール](https://app.codegrid.net/entry/bem-basic-1)
+- [初心者による初心者向けのSMACSSまとめ](https://qiita.com/k_mori/items/7d3da61c712ff9513163)
+- [脱・CSS無法地帯。FLOCSSで指針のある設計を。](https://qiita.com/sueshin/items/dcbaf3d8a0adb6b087db)
 
 ## BEM
 - Block（塊）、Element (要素)、Modifier (修飾) の３つに分ける
@@ -59,8 +56,6 @@ https://app.codegrid.net/entry/bem-basic-1
 - オブジェクト指向
 - マルチクラス
 
-メモ：細かな差分（背景色のみ）などはModifierで切り替えるが複数差分が存在する場合は、シングルクラスの考え方を優先してBlockを分ける
-
 ### コード例
 
 ```HTML
@@ -98,14 +93,52 @@ https://app.codegrid.net/entry/bem-basic-1
 - layoutとstateとthemeには接頭語をつける
 - マルチクラス
 
+メモ：Layoutsを分けるためdivが増えやすいイメージ。正しいマークアップを望む場合resetCSSが重要。
+
 ### コード例
 
 ```HTML
-ul[class=""]>(li[class=""]>p[class=""]+p[class=""])
-ul[class=""]>(li[class=""]>p[class=""]+p[class=""])*2
+<div class="l-container-12">
+  <div class="l-grid-12">
+    <div class="card card-executive t-boder-gold">
+      <p class="card-title"></p>
+      <p class="card-text"></p>
+    </div>
+  </div>
+</div>
+<div class="l-container-12">
+  <div class="l-grid-06">
+    <div class="card">
+      <p class="card-title"></p>
+      <p class="card-text"></p>
+    </div>
+  </div>
+  <div class="l-grid-06">
+    <div class="card">
+      <p class="card-title"></p>
+      <p class="card-text"></p>
+    </div>
+  </div>
+</div>
 ```
 
 ```CSS
+.l-container-12 { ... }
+
+l-grid-01 { ... }
+l-grid-02 { ... }
+...
+l-grid-11 { ... }
+l-grid-12 { ... }
+
+t-boder-red { ... }
+t-boder-gold { ... }
+...
+
+card { ... }
+card-executive { ... }
+card-title { ... }
+card-text { ... }
 ```
 
 ## FLOCSS
@@ -113,12 +146,19 @@ ul[class=""]>(li[class=""]>p[class=""]+p[class=""])*2
 - 命名規則はBEM
 - マルチクラス
 
+メモ：ディレクトリ構成まで考慮したCSS運用のイメージ
+
 ### コード例
 
-```HTML
-ul[class=""]>(li[class=""]>p[class=""]+p[class=""])
-ul[class=""]>(li[class=""]>p[class=""]+p[class=""])*2
-```
+SMACSSと大きく変わらないので割愛
 
-```CSS
+### ディレクトリ例
+
+```
+├──foundation/      /* Reset.cssなど土台となるCSS群 */
+├──layout/          /* header, sidebar, footerなどのレイアウト用CSS群 */
+└──object/
+    ├──component/   /* 再利用できる小さなコンポーネントCSS群    例：.btn-text_small {} */
+    ├──project/     /* プロジェクト固有のコンポーネントCSS群    例：.card-title {} */
+    └──utility/     /* ユーティリティクラスを定義するCSS群      例：.u-container {} */
 ```
