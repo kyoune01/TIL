@@ -33,7 +33,7 @@
 for (var i = 10; i < 10; i++) {
   if (data[i][4] > 30) {
     if (area_max < data[i][4]) {
-      area_max = data[i][4]
+      area_max = data[i][4];
     }
   }
 }
@@ -54,12 +54,12 @@ for (var i = 10; i < 10; i++) {
 下記のコードのどちらが「優れている」でしょうか？<br>
 
 ```Javascript
-return ( exponent >= 0 ? $.fn.method() : '' )
+return ( exponent >= 0 ? $.fn.method() : '' );
 ```
 
 ```Javascript
 if ( exponent >= 0 ) {
-    $.fn.method()
+    $.fn.method();
 }
 ```
 

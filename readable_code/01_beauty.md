@@ -102,10 +102,10 @@ Javascriptの処理を一瞬で理解できるでしょうか？
 ```
 
 ```Javascript
-tab1 = document.getElementById('tabcon1s')
+tab1 = document.getElementById('tabcon1s');
 tab1.addEventListener('click',openTab);
-tab3 = document.getElementById('tabcon3s')
-tab2 = document.getElementById('tabcon2s')
+tab3 = document.getElementById('tabcon3s');
+tab2 = document.getElementById('tabcon2s');
 tab2.addEventListener('click',openTab);
 tab3.addEventListener('click',openTab);
 ```
@@ -118,9 +118,9 @@ tab3.addEventListener('click',openTab);
 （デザイン4大原則の「整列」「反復」です）<br>
 
 ```Javascript
-tab1 = document.getElementById('tabcon1s')
-tab3 = document.getElementById('tabcon3s')
-tab2 = document.getElementById('tabcon2s')
+tab1 = document.getElementById('tabcon1s');
+tab3 = document.getElementById('tabcon3s');
+tab2 = document.getElementById('tabcon2s');
 
 tab1.addEventListener('click',openTab);
 tab3.addEventListener('click',openTab);
@@ -132,9 +132,9 @@ tab2.addEventListener('click',openTab);
 次は◯が来て欲しい、「こうであって欲しい順番」を指します。
 
 ```Javascript
-tab1 = document.getElementById('tabcon1s')
-tab2 = document.getElementById('tabcon2s')
-tab3 = document.getElementById('tabcon3s')
+tab1 = document.getElementById('tabcon1s');
+tab2 = document.getElementById('tabcon2s');
+tab3 = document.getElementById('tabcon3s');
 
 tab1.addEventListener('click',openTab);
 tab2.addEventListener('click',openTab);

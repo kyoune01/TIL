@@ -131,19 +131,19 @@
 
 ```Javascript
 const openTab = function (currentTab, targetID) {
-    const tabElement = document.querySelectorAll('.tabs')
+    const tabElement = document.querySelectorAll('.tabs');
     $tabElement.forEach(($tab) => {
-        $tab.classList.remove('js-openTab')
-    })
-    const contentElement = document.querySelectorAll('.content')
+        $tab.classList.remove('js-openTab');
+    });
+    const contentElement = document.querySelectorAll('.content');
     $contentElement.forEach(($content) => {
-        $content.classList.remove('js-openContent')
-    })
+        $content.classList.remove('js-openContent');
+    });
 
-    currentTab.classList.add('js-openTab')
+    currentTab.classList.add('js-openTab');
 
-    const targetContent = document.getElementById(targetID)
-    $targetContent.classList.add('js-openContent')
+    const targetContent = document.getElementById(targetID);
+    $targetContent.classList.add('js-openContent');
 }
 ```
 
@@ -157,19 +157,19 @@ Before
 
 ```Javascript
 const openTab = function (currentTab, targetID) {
-    const tabElement = document.querySelectorAll('.tabs')
+    const tabElement = document.querySelectorAll('.tabs');
     $tabElement.forEach(($tab) => {
-        $tab.classList.remove('js-openTab')
-    })
-    const contentElement = document.querySelectorAll('.content')
+        $tab.classList.remove('js-openTab');
+    });
+    const contentElement = document.querySelectorAll('.content');
     $contentElement.forEach(($content) => {
-        $content.classList.remove('js-openContent')
-    })
+        $content.classList.remove('js-openContent');
+    });
 
-    currentTab.classList.add('js-openTab')
+    currentTab.classList.add('js-openTab');
 
-    const targetContent = document.getElementById(targetID)
-    $targetContent.classList.add('js-openContent')
+    const targetContent = document.getElementById(targetID);
+    $targetContent.classList.add('js-openContent');
 }
 ```
 
@@ -177,16 +177,16 @@ After
 
 ```Javascript
 const openTab = function (currentTab, targetID) {
-    const $tabElement = $('.tabs')
-    $tabElement.removeClass('js-openTab')
+    const $tabElement = $('.tabs');
+    $tabElement.removeClass('js-openTab');
 
-    const $contentElement = $('.content')
-    $contentElement.removeClass('js-openContent')
+    const $contentElement = $('.content');
+    $contentElement.removeClass('js-openContent');
 
-    $(currentTab).addClass('js-openTab')
+    $(currentTab).addClass('js-openTab');
 
-    const $targetContent = $(targetID)
-    $targetContent.addClass('js-openContent')
+    const $targetContent = $(targetID);
+    $targetContent.addClass('js-openContent');
 }
 ```
 
