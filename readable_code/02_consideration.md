@@ -117,8 +117,8 @@
 
 ```HTML
 <ul>
-    <li class="tabs js-openTab" onClick="openTab('content1')">tab1</li>
-    <li class="tabs" onClick="openTab('content2')">tab2</li>
+    <li class="tabs js-openTab" onClick="openTab(this, 'content1')">tab1</li>
+    <li class="tabs" onClick="openTab(this, 'content2')">tab2</li>
     ...
 </ul>
 
@@ -130,19 +130,19 @@
 ```
 
 ```Javascript
-let openTab = function (targetID) {
-    let $tabElement = document.querySelector('.tabs')
+const openTab = function (currentTab, targetID) {
+    const tabElement = document.querySelectorAll('.tabs')
     $tabElement.forEach(($tab) => {
         $tab.classList.remove('js-openTab')
     })
-    let $contentElement = document.querySelector('.content')
+    const contentElement = document.querySelectorAll('.content')
     $contentElement.forEach(($content) => {
         $content.classList.remove('js-openContent')
     })
 
-    this.classList.add('js-openTab')
+    currentTab.classList.add('js-openTab')
 
-    let $targetContent = document.getElementById(targetID)
+    const targetContent = document.getElementById(targetID)
     $targetContent.classList.add('js-openContent')
 }
 ```
@@ -156,19 +156,19 @@ let openTab = function (targetID) {
 Before
 
 ```Javascript
-let openTab = function (targetID) {
-    let $tabElement = document.querySelector('.tabs')
+const openTab = function (currentTab, targetID) {
+    const tabElement = document.querySelectorAll('.tabs')
     $tabElement.forEach(($tab) => {
         $tab.classList.remove('js-openTab')
     })
-    let $contentElement = document.querySelector('.content')
+    const contentElement = document.querySelectorAll('.content')
     $contentElement.forEach(($content) => {
         $content.classList.remove('js-openContent')
     })
 
-    this.classList.add('js-openTab')
+    currentTab.classList.add('js-openTab')
 
-    let $targetContent = document.getElementById(targetID)
+    const targetContent = document.getElementById(targetID)
     $targetContent.classList.add('js-openContent')
 }
 ```
@@ -176,16 +176,16 @@ let openTab = function (targetID) {
 After
 
 ```Javascript
-let openTab = function (targetID) {
-    let $tabElement = $('.tabs')
+const openTab = function (currentTab, targetID) {
+    const $tabElement = $('.tabs')
     $tabElement.removeClass('js-openTab')
 
-    let $tabElement = $('.content')
-    $tabElement.removeClass('js-openContent')
+    const $contentElement = $('.content')
+    $contentElement.removeClass('js-openContent')
 
-    this.addClass('js-openTab')
+    $(currentTab).addClass('js-openTab')
 
-    let $targetContent = $(targetID)
+    const $targetContent = $(targetID)
     $targetContent.addClass('js-openContent')
 }
 ```
