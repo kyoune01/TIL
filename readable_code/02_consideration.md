@@ -132,19 +132,19 @@
 ```Javascript
 const openTab = function (currentTab, targetID) {
     const tabElement = document.querySelectorAll('.tabs');
-    $tabElement.forEach(($tab) => {
-        $tab.classList.remove('js-openTab');
+    tabElement.forEach((tab) => {
+       tab.classList.remove('js-openTab');
     });
     const contentElement = document.querySelectorAll('.content');
-    $contentElement.forEach(($content) => {
-        $content.classList.remove('js-openContent');
+    contentElement.forEach((content) => {
+        content.classList.remove('js-openContent');
     });
 
     currentTab.classList.add('js-openTab');
 
     const targetContent = document.getElementById(targetID);
-    $targetContent.classList.add('js-openContent');
-}
+    targetContent.classList.add('js-openContent');
+};
 ```
 
 <br>
@@ -158,19 +158,19 @@ Before
 ```Javascript
 const openTab = function (currentTab, targetID) {
     const tabElement = document.querySelectorAll('.tabs');
-    $tabElement.forEach(($tab) => {
-        $tab.classList.remove('js-openTab');
+    tabElement.forEach((tab) => {
+        tab.classList.remove('js-openTab');
     });
     const contentElement = document.querySelectorAll('.content');
-    $contentElement.forEach(($content) => {
-        $content.classList.remove('js-openContent');
+    contentElement.forEach((content) => {
+        content.classList.remove('js-openContent');
     });
 
     currentTab.classList.add('js-openTab');
 
     const targetContent = document.getElementById(targetID);
-    $targetContent.classList.add('js-openContent');
-}
+    targetContent.classList.add('js-openContent');
+};
 ```
 
 After
@@ -187,7 +187,7 @@ const openTab = function (currentTab, targetID) {
 
     const $targetContent = $(targetID);
     $targetContent.addClass('js-openContent');
-}
+};
 ```
 
 ## 短いコードを書く
