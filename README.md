@@ -17,8 +17,10 @@
 「topic」に対して下記の命名規則に従ってブランチを立てる<br>
 ※プルリクの一覧で編集中のトピックを把握できるようにする
 
-- 新規追加時は、 write/[topic]
-- 既存修正時は、 modify/[topic]
+```
+write/[topic] ：新規追加時
+modify/[topic]：既存修正時
+```
 
 基本 README.md へまとめた内容を記載する<br>
 「content」は README.md から内容を分割するときに使用する。下記の命名規則に従う
