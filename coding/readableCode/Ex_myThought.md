@@ -105,5 +105,31 @@ const delteAllClass = function (selectorName, delClassName) {
 ```
 
 ## 命名
+### 設問：適切な命名をしてください
+
+1. clickNav()
+1. addClassName(target, className)
+1. .text-preWrap
+
+### 設問：下記の関数名や引数、返り値を適切な命名へ修正しなさい
+
+```Javascript
+/**
+ * 天気の情報を取得する関数
+ * @param  {strign} 情報を取得したいエリアID
+ * @return {array}  取得結果
+ */
+const fetchWeatherData = function (areaID) {
+    // body...
+    return fetchData;
+}
+```
+
+### 設問：下記の命名に対応する名前を考えてください
+
+- rangeEnd
+- endEvent()
+- .btn-hidden
+
 ## コメント
 ## ロジック
