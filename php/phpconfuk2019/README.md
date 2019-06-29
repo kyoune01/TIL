@@ -1,4 +1,7 @@
 # phpcounfuk2019 メモメモ
+[PHPカンファレンス福岡2019](https://phpcon.fukuoka.jp/2019/)<br>
+2019.6.29(sat) 10:00 - 18:00<br>
+福岡ファッションビル 8階 A・B・C・Dホール
 
 ## PHP型検査
 
