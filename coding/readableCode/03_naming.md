@@ -35,7 +35,7 @@ getElementWidth(target)
 
 変数：体言止め<br>
 「天気の情報 = weatherData」<br>
-「要素の横幅 = widthOf(Element)」
+「要素の横幅 = width(Element)」
 
 関数：動詞を先頭におく<br>
 「天気の情報を取得する = fetchWeather()」<br>

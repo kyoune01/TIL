@@ -132,4 +132,27 @@ const fetchWeatherData = function (areaID) {
 - .btn-hidden
 
 ## コメント
+### 設問：上記例から1つ選び、コードと共にダメなコメントを答えてください。さらにダメなコメントを改善したコメントを答えてください
+提出コードのコメントを読み、修正後が改善されているか確認する
+
+### 設問：下記の関数にJSDocのフォーマットでコメントしてください
+
+```Javascript
+/**
+ * 渡された数値を足した結果を返す関数
+ * @param  {Number} num1
+ * @param  {Number} num2
+ * @return {Number} sum
+ */
+const sumCount = function (num1=0, num2=0) {
+    /**
+     * 引数を足した数
+     * ※引数の型チェックを行わないため、Stringsが渡された場合はStringsになる
+     */
+    const sum = num1 + num2;
+
+    return sum;
+};
+```
+
 ## ロジック
