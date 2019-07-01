@@ -5,9 +5,42 @@
 - Symfony
 
 ### 参考
+- [CakePHPとLaravelの比較2018](https://crieit.net/posts/CakePHP-Laravel-2018)
 - []()
 
 ## Laravel
+[公式HP](https://laravel.com/)
+
+- 超有名＋開発が楽しいFW
+- ディレクトリが煩雑で散らばってるイメージ
+- デフォルトでVueが入ってるなど、フロント側との連携がしやすい
+- cakeのBake的なartisan
+- viewはBlade、ValidationはControllerに書く
+
+デフォルト
+
+```
+Laravel/
+    ├── app/
+    │   ├── Http/
+    │   │   ├── Controller/ // コントローラ
+    │   │   └── Middleware/ // ミドルウェア
+    │   └── models/         // モデル
+    ├── config/             // DB、appなど各種設定
+    ├── datebase/
+    │   ├── migrations/     // テーブルを簡単につくれる
+    │   └── seeds/          // テーブルに値を簡単に入れられる
+    ├── resources/
+    │   ├── assets/         // sassやSPA-Vueなどサーバ側で動作するリソース
+    │   │   ├── sass/
+    │   │   └── js/
+    │   └── views/          // ビュー
+    ├── routes/
+    │   ├── web.php         // ページ用ルーティング
+    │   └── api.php         // API用ルーティング
+    └── tests/              // テスト置き場
+```
+
 ## cakephp
 [公式HP](https://cakephp.org/jp)
 
@@ -15,7 +48,7 @@
     - Model、View、Controller、役割が全てディレクトリ名なので初心者がとっつきやすい（と思う）
 - 使用感は他FW（Laravel）と同じ
 - Vueなどの連携がない
-- Bakeコマンドで各ファイルを生成できる（使いづらい？）
+- Bakeコマンドで各ファイルを生成できる
 - routingファイルが1つなのでAPIと分けたいときにめんどくさいかも
 - 「AppController.php」など全ての役割毎に継承元の「App」ファイルが存在する
 
