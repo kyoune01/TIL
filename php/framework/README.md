@@ -3,6 +3,7 @@
 - cakephp
 - codeigniter
 - Symfony
+- Smarty
 
 ### 参考
 - [CakePHPとLaravelの比較2018](https://crieit.net/posts/CakePHP-Laravel-2018)
@@ -114,3 +115,12 @@ cakephp/
 
 ## codeigniter
 ## Symfony
+
+## Smarty
+[公式HP](https://www.smarty.net/docsv2/ja/)
+
+- HTMLテンプレートを使用していた時代に主流だった
+- PHP4 から対応
+- composer 未対応
+- いま新規フレームワークとして選ぶ理由は何もない
+- ロジックとビューに分け、ロジック部分をキャッシュとして吐き出すため高速に読み込みができた
