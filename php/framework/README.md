@@ -7,7 +7,7 @@
 
 ### 参考
 - [CakePHPとLaravelの比較2018](https://crieit.net/posts/CakePHP-Laravel-2018)
-- []()
+- [【徹底比較】2019年版PHPフレームワークおすすめランキングTOP5](https://www.sejuku.net/blog/4016)
 
 ## Laravel
 [公式HP](https://laravel.com/)
@@ -115,6 +115,15 @@ cakephp/
 
 ## codeigniter
 ## Symfony
+[公式HP](https://symfony.com/legacy)
+
+- ドメイン駆動設計を推奨（modelがない）
+- サーバインストールで動く、ファイル納品だけでは動かない？
+
+> 比較的規模の大きなWebサービスがSymfonyで作られています<br>
+> アプリケーションを開発する上で開発と保守を効率化することを目的とし
+
+らしい
 
 ## Smarty
 [公式HP](https://www.smarty.net/docsv2/ja/)
