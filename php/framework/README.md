@@ -108,12 +108,32 @@ cakephp/
     │   └── error.log       // エラー内容が書かれてる
     └── src/
         ├── Controller/     // ルーティング情報からここを探す
-        ├── Model
+        ├── Model/
         │   └── Table/      // DBのテーブル情報
         └── Template/       // ブラウザで表示される内容はここ
 ```
 
 ## codeigniter
+[公式HP](https://www.codeigniter.com/)
+
+- パフォーマンスが良い、ただしFWの恩恵は少ない
+- コア部分の処理が追いやすい
+- 記事は2015～2017年までの記事が多い印象
+- composer 対応
+
+デフォルト（composer kenjis使用）
+
+```
+codeigniter/
+    ├── bin(system)/        // コアファイル
+    └── application/
+        ├── config/         // 各設定
+        │   └── routes.php  // ルーティング
+        ├── controllers/    // コントローラ
+        ├── models/         // モデル
+        └── views/          // ビュー
+```
+
 ## Symfony
 [公式HP](https://symfony.com/legacy)
 
