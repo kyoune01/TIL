@@ -156,3 +156,36 @@ const sumCount = function (num1=0, num2=0) {
 ```
 
 ## ロジック
+### 設問：if文を並び替えてください
+
+```Javascript
+if (/* よくあるケース */) {
+    // メイン処理
+} else if (/* 上記と同じ頻度の特殊ケース */) {
+    // 軽い処理A
+} else if (/* 上記と同じ頻度の特殊ケース */) {
+    // 軽い処理B
+} else /* 特殊ケース */ {
+    // 長い処理
+    // 長い処理
+    // 長い処理
+}
+```
+
+### 設問：リファクタリングしてください
+
+```Javascript
+const data = [14,21,73,43,9,45];
+const count = data.lenght;
+const now = new Date();
+const today = now.getDate();
+let num = [];
+
+for (var i = count; i < count; i++) {
+    if ((data[i] > 31) && (data[i] < today)) {
+        continue;
+    }
+    num.push(data[i]);
+}
+```
+
