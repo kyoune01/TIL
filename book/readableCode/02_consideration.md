@@ -99,10 +99,10 @@
 役割で分割することで「l-container-12 => グリッドデザイン用のラッパー」など、「各クラスが何のために存在しているか」を一言で説明できるようになりました<br>
 ※しかし先ほど述べた通り、分割したことによって更にHTMLへの負荷が上がりました。どのレベルまで分割するか案件やサイト規模を考慮して、どのCSS設計を選択するか判断してください
 
-またCSSだけでなく、Javascriptで機能を実装しているときにも必ず1つの目的があります。目的を言葉で説明できない状態、説明以外のことをしている状態を避けましょう
+またCSSだけでなく、JavaScriptで機能を実装しているときにも必ず1つの目的があります。目的を言葉で説明できない状態、説明以外のことをしている状態を避けましょう
 
 <br>
-設問：タブ機能を実装したJavascriptをリファクタリングしてください。必要な動作は下記です
+設問：タブ機能を実装したJavaScriptをリファクタリングしてください。必要な動作は下記です
 
 - クリックされたときにタブが開いていた場合、全て閉じる
 - クリックされたタブのコンテンツを開く
@@ -121,7 +121,7 @@
 </div>
 ```
 
-```Javascript
+```JavaScript
 const openTab = function (currentTab, targetID) {
     const tabElement = document.querySelectorAll('.tabs');
     tabElement.forEach((tab) => {
@@ -147,7 +147,7 @@ const openTab = function (currentTab, targetID) {
 
 Before
 
-```Javascript
+```JavaScript
 const openTab = function (currentTab, targetID) {
     const tabElement = document.querySelectorAll('.tabs');
     tabElement.forEach((tab) => {
@@ -167,7 +167,7 @@ const openTab = function (currentTab, targetID) {
 
 After
 
-```Javascript
+```JavaScript
 const openTab = function (currentTab, targetID) {
     const $tabElement = $('.tabs');
     $tabElement.removeClass('js-openTab');
@@ -186,7 +186,7 @@ const openTab = function (currentTab, targetID) {
 
 コーダー・エンジニアが目指すべき、万人が読めるコードは「何も書かないこと」です
 
-```Javascript
+```JavaScript
 // やって欲しいことが何も書かなくても実行される
 ```
 
