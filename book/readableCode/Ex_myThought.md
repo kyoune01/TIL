@@ -72,9 +72,9 @@
 上記より、インデントを踏襲してコーディングする<br>
 （もし余裕があればコーディングガイドラインを確認し、確認者に確認を取ってから修正する）
 ## 思いやり
-### 設問：タブ機能を実装したJavascriptをリファクタリングしてください
+### 設問：タブ機能を実装したJavaScriptをリファクタリングしてください
 
-```Javascript
+```JavaScript
 /**
  * タブがクリックされたとき対応するコンテンツを開くイベント
  * @param  {context} currentTab eventを発火したタブ自身
@@ -113,7 +113,7 @@ const delteAllClass = function (selectorName, delClassName) {
 
 ### 設問：下記の関数名や引数、返り値を適切な命名へ修正しなさい
 
-```Javascript
+```JavaScript
 /**
  * 天気の情報を取得する関数
  * @param  {strign} 情報を取得したいエリアID
@@ -137,7 +137,7 @@ const fetchWeatherData = function (areaID) {
 
 ### 設問：下記の関数にJSDocのフォーマットでコメントしてください
 
-```Javascript
+```JavaScript
 /**
  * 渡された数値を足した結果を返す関数
  * @param  {Number} num1
@@ -156,3 +156,36 @@ const sumCount = function (num1=0, num2=0) {
 ```
 
 ## ロジック
+### 設問：if文を並び替えてください
+
+```JavaScript
+if (/* よくあるケース */) {
+    // メイン処理
+} else if (/* 上記と同じ頻度の特殊ケース */) {
+    // 軽い処理A
+} else if (/* 上記と同じ頻度の特殊ケース */) {
+    // 軽い処理B
+} else /* 特殊ケース */ {
+    // 長い処理
+    // 長い処理
+    // 長い処理
+}
+```
+
+### 設問：リファクタリングしてください
+
+```JavaScript
+const data = [14,21,73,43,9,45];
+const count = data.lenght;
+const now = new Date();
+const today = now.getDate();
+let num = [];
+
+for (var i = count; i < count; i++) {
+    if ((data[i] > 31) && (data[i] < today)) {
+        continue;
+    }
+    num.push(data[i]);
+}
+```
+

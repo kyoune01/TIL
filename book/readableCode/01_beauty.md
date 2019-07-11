@@ -89,7 +89,7 @@ HTML・コードを書く際にはデザインの4大原則を意識すること
 ## 一貫性と意味のある並び
 
 下記HTMLにタブで表示／非表示を切り替えるコードをあげます<br>
-Javascriptの処理を一瞬で理解できるでしょうか？
+JavaScriptの処理を一瞬で理解できるでしょうか？
 
 ```HTML
 <ul class="btn_wrap">
@@ -98,7 +98,7 @@ Javascriptの処理を一瞬で理解できるでしょうか？
 </ul>
 ```
 
-```Javascript
+```JavaScript
 tab1 = document.getElementById('tabcon1s');
 tab1.addEventListener('click',openTab);
 tab3 = document.getElementById('tabcon3s');
@@ -107,12 +107,12 @@ tab2.addEventListener('click',openTab);
 tab3.addEventListener('click',openTab);
 ```
 
-上記のJavascriptのコードは「段落」と「意味のある並び」が欠けた状態です。「段落」と「意味のある並び」を与えることでコードの可読性を上げていきます
+上記のJavaScriptのコードは「段落」と「意味のある並び」が欠けた状態です。「段落」と「意味のある並び」を与えることでコードの可読性を上げていきます
 
 まずはコードに「段落」を与えます。「段落」とは、似ている考えを1つにまとめて他の考えと分けたものを指します<br>
 （デザイン4大原則の「整列」「反復」です）
 
-```Javascript
+```JavaScript
 tab1 = document.getElementById('tabcon1s');
 tab3 = document.getElementById('tabcon3s');
 tab2 = document.getElementById('tabcon2s');
@@ -124,7 +124,7 @@ tab2.addEventListener('click',openTab);
 
 つぎに「意味のある並び」を与えます。「意味のある並び」とは「1,2,3...」や「a,b,c...」などの要素が並んでいるとき、次は◯◯が来て欲しいなど、「こうであって欲しい順番」を指します。
 
-```Javascript
+```JavaScript
 tab1 = document.getElementById('tabcon1s');
 tab2 = document.getElementById('tabcon2s');
 tab3 = document.getElementById('tabcon3s');
@@ -137,7 +137,7 @@ tab3.addEventListener('click',openTab);
 はじめのコードより理解に必要な時間が大幅に削減することができましたね
 
 HTMLは記載の順で表示の順番が変わるため、コードとは別のルールで記載します<br>
-しかしJavascriptはコードの並び順がバラバラだとしても想定通りに動いてしまうため、長期期間運用されてきたコードでは混沌とすることが多いです
+しかしJavaScriptはコードの並び順がバラバラだとしても想定通りに動いてしまうため、長期期間運用されてきたコードでは混沌とすることが多いです
 
 自分がどの段落を修正すべきか、修正したことで意味の並びが変わらないか意識して修正することが重要です
 
@@ -190,13 +190,13 @@ HTMLは記載の順で表示の順番が変わるため、コードとは別の�
 
 もしくは下記のコードの場合、どちらが視認性が良いでしょうか？
 
-```Javascript
+```JavaScript
 if (isChecked) {
     return true;
 }
 ```
 
-```Javascript
+```JavaScript
 if (isChecked)
 {
     return true;
@@ -229,4 +229,4 @@ HTMLを書く際に美しさを意識することで、理解に必要な時間�
 しかし、コーダ・エンジニアとして生きるために、開発環境の設計などルールを決める場でなぜそのルールが必要なのかについて意識できる、未来の負債にならないような修正方法を意識できるようになってください
 
 最後に、
-**Javascriptの末尾「;」を付けるか付けないかは必ず統一しなさい**
+**JavaScriptの末尾「;」を付けるか付けないかは必ず統一しなさい**

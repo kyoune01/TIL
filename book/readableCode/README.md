@@ -13,7 +13,7 @@
 「読みやすいHTML・コードをかくコツ・意識すべきこと」<br>
 の視点でまとめます
 
-資料に記載する言語は、HTML・Javascript・CSS、など<br>
+資料に記載する言語は、HTML・JavaScript・CSS、など<br>
 ※細かな言語仕様を知らなくても本質は理解できるように記載
 
 ## 全体
@@ -29,7 +29,7 @@
 ## はじめに
 1年前の自分の書いたHTML・コードを読んだことはありますか？
 
-```Javascript
+```JavaScript
 for (var i = 10; i < 10; i++) {
   if (data[i][4] > 30) {
     if (area_max < data[i][4]) {
@@ -53,11 +53,11 @@ for (var i = 10; i < 10; i++) {
 ### 「優れた」コードとは
 下記のコードのどちらが「優れている」でしょうか？
 
-```Javascript
+```JavaScript
 ( isDone >= 0 ? $.fn.method() : '' );
 ```
 
-```Javascript
+```JavaScript
 if ( isDone >= 0 ) {
     $.fn.method();
 }

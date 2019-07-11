@@ -13,7 +13,7 @@
 
 下記の例では、コメントがなくても定数MAX_COUNTに10が入っていることは分かります。
 
-```Javascript
+```JavaScript
 // MAX_COUNTに10を設定する
 const MAX_COUNT = 10
 ```
@@ -21,7 +21,7 @@ const MAX_COUNT = 10
 適切にコメントを残すことで、そのコードを用いて<br>
 あなたが何がしたかったのか／何故そのコードを書いたのかを伝えられます
 
-```Javascript
+```JavaScript
 // 処理を停止するカウント上限
 const MAX_COUNT = 10
 ```
@@ -50,14 +50,14 @@ const MAX_COUNT = 10
 
 あなたが既存コードを修正する必要があったとき、下記のコメントは作業の助けになるでしょうか？
 
-```Javascript
+```JavaScript
 // ガードする
 if($(this).find(">ul").length==0) return;
 ```
 
 下記のようなコメントであれば嬉しいのではないでしょうか？
 
-```Javascript
+```JavaScript
 // 子階層がなければページ遷移させる
 if($(this).find(">ul").length==0) return;
 ```
@@ -71,7 +71,7 @@ if($(this).find(">ul").length==0) return;
 
 まとめを読んでコメントを残す癖がついてきたあなたは、次に「沢山考えを詰め込むとコメントが長くなってしまった。仕方のないことなのかな？」といった疑問に直面することになるでしょう
 
-```Javascript
+```JavaScript
 // 数値の平均を計算して結果を返す関数
 // 共通化できそうだったので共通化した
 // でも呼んでる場所は一箇所
@@ -84,7 +84,7 @@ const calculateAverage = function (arrayNum) {
 
 他人のために残すため、コメントはどうしても長くなる状況があります。しかしできる限り、冗長なコメントではなく簡潔で分かりやすいコメントを残せる方が「美しい」です
 
-```Javascript
+```JavaScript
 // 渡された配列の平均を取って返す
 // 配列を引数にとり、中身はint型とする
 const calculateAverage = function (arrayNum) {
@@ -94,7 +94,7 @@ const calculateAverage = function (arrayNum) {
 
 また、
 
-```Javascript
+```JavaScript
 // 速度向上のためにこの時点でデータを取得することがあるので一時的に保存する
 // ↓
 // キャッシュする
@@ -103,10 +103,10 @@ const calculateAverage = function (arrayNum) {
 などのような専門用語での言い換えを用いることで、短く簡潔に残すだけでなく、認識のズレを防ぐ「美しい」コメントを残すこともできます
 
 ## コメントのフォーマット
-Javascriptには、大人数が関わる案件や個人間の揺れがないコメントを残すため<br>
+JavaScriptには、大人数が関わる案件や個人間の揺れがないコメントを残すため<br>
 「[JSDoc](https://www38.atwiki.jp/aias-jsstyleguide2/pages/14.html)」というフォーマットが存在します
 
-```Javascript
+```JavaScript
 /**
  * 配列の平均を返す
  * @param  {array} arrayNum Numberを格納した配列
@@ -163,7 +163,7 @@ const calculateAverage = function (arrayNum) {
 <br>
 設問：下記の関数にJSDocのフォーマットでコメントしてください
 
-```Javascript
+```JavaScript
 const sumCount = function (num1=0, num2=0) {
     const sum = num1 + num2;
     return sum;
@@ -186,14 +186,14 @@ const sumCount = function (num1=0, num2=0) {
 もし、コードを書いていて（ここの処理で文字列を渡されるとやばいな）と思うコードがあるとしましょう<br>
 まずは思ったことをそのままコメントに残していきます
 
-```Javascript
+```JavaScript
 // この関数に文字列を渡すとやばい
 ```
 
 一度書き殴ってから、きれいな言葉にします<br>
 （このときにすぐ書き換えることが難しければ、一晩置くことで書き換えた言葉に深みが出ます）
 
-```Javascript
+```JavaScript
 // 注意：引数がint以外は処理できない
 // TODO: ガード処理を入れる
 ```
