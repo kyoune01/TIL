@@ -181,7 +181,7 @@ const now = new Date();
 const today = now.getDate();
 let num = [];
 
-for (var i = count; i < count; i++) {
+for (var i = 0; i < count; i++) {
     if ((data[i] > 31) && (data[i] < today)) {
         continue;
     }
