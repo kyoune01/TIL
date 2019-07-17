@@ -154,7 +154,7 @@ data = [14,21,73,43,9,45];
 today = new Date();
 num = [];
 
-for (i = data.lenght; i < data.lenght; i++) {
+for (i = 0; i < data.length; i++) {
     if (data[i] < 31) {
         if (today.getDate() < data[i]) {
             num.push(data[i]);
