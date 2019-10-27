@@ -30,8 +30,8 @@ Qiita：[プログラミングの原則](https://qiita.com/ryotanatsume/items/01
 （デザインをなんとなく再現できるが、再利用や改修を考えて設計できない状態）→<br>
 （代表的なCSS設計の思想や実装例を知っていて、実際に試そうと思える状態になれる）
 
-書籍：[最強のCSS設計　チーム開発を成功に導くケーススタディ](https://www.amazon.co.jp/dp/B01MZDTPSS/ref=cm_sw_r_tw_dp_U_x_.XpTDb3AFBWN8)
-フレームワーク：[Bootstrp](https://getbootstrap.com/)<br>
+書籍：[最強のCSS設計　チーム開発を成功に導くケーススタディ](https://www.amazon.co.jp/dp/B01MZDTPSS/ref=cm_sw_r_tw_dp_U_x_.XpTDb3AFBWN8)<br>
+フレームワーク：[Bootstrp](https://getbootstrap.com/)
 #### Javascript
 がんばれ
 ## 参考
