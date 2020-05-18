@@ -107,9 +107,11 @@ const delteAllClass = function (selectorName, delClassName) {
 ## 命名
 ### 設問：適切な命名をしてください
 
-1. clickNav()
+1. showNavigation()
 1. addClassName(target, className)
 1. .text-preWrap
+
+※「クリックされた」はただの発火タイミング。関数名（関数内の処理）に影響しないため、関数名には不適切
 
 ### 設問：下記の関数名や引数、返り値を適切な命名へ修正しなさい
 
@@ -159,13 +161,13 @@ const sumCount = function (num1=0, num2=0) {
 ### 設問：if文を並び替えてください
 
 ```JavaScript
-if (/* よくあるケース */) {
+if (/* よくあるケースA */) {
     // メイン処理
-} else if (/* 上記と同じ頻度の特殊ケース */) {
-    // 軽い処理A
-} else if (/* 上記と同じ頻度の特殊ケース */) {
+} else if (/* よくあるケースB */) {
     // 軽い処理B
-} else /* 特殊ケース */ {
+} else if (/* 特殊ケース */) {
+    // 軽い処理A
+} else if (/* 特殊ケース */) {
     // 長い処理
     // 長い処理
     // 長い処理

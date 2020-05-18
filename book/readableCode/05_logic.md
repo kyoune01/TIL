@@ -38,9 +38,9 @@ if (/* 特殊ケース */) {
     // 長い処理
 } else if (/* 上記と同じ頻度の特殊ケース */) {
     // 軽い処理A
-} else if (/* よくあるケース */) {
+} else if (/* よくあるケースA */) {
     // メイン処理
-} else /* 上記と同じ頻度の特殊ケース */ {
+} else if (/* よくあるケースB */) {
     // 軽い処理B
 }
 ```
@@ -51,9 +51,9 @@ if (/* 特殊ケース */) {
 次の問題です。下記の並び順はどちらが読みやすいでしょうか？
 
 ```JavaScript
-A = getValue(a);
+const A = getValue(a);
 if (A < 100) {
-    B = getValue(b);
+    const B = getValue(b);
     if (B > 30) {
         if ((A + B) < 100) {
             return (A + B);
@@ -65,10 +65,10 @@ return 0;
 ```
 
 ```JavaScript
-A = getValue(a);
-B = getValue(b);
+const A = getValue(a);
+const B = getValue(b);
 
-if ((A > 100) || (B > 30) || ((A + B) < 100)){
+if ((A >= 100) || (B < 30) || ((A + B) > 100)){
     return 0;
 }
 
