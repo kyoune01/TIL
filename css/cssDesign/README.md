@@ -1,26 +1,35 @@
-# CSS設計
+---
+title: "cssDesign"
+slug: "/reading/cssDesign"
+date: "2001-01-00"
+---
+
+## CSS 設計
+
 - BEM
 - OOCSS
 - SMACSS
 - FLOCSS
-など<br>
+  など<br>
 
 設計の選択によってコストや敷居が変わるため、開発の規模感や期間で使い分ける
 
 ### 参考
-- [各CSS設計手法を取り入れる上でのメリット・デメリットをまとめてみた](https://qiita.com/nezurika/items/a964e21d3596b0ee4c9a)
-- [BEMによるフロントエンドの設計 第1回 基本概念とルール](https://app.codegrid.net/entry/bem-basic-1)
-- [初心者による初心者向けのSMACSSまとめ](https://qiita.com/k_mori/items/7d3da61c712ff9513163)
-- [脱・CSS無法地帯。FLOCSSで指針のある設計を。](https://qiita.com/sueshin/items/dcbaf3d8a0adb6b087db)
+
+- [各 CSS 設計手法を取り入れる上でのメリット・デメリットをまとめてみた](https://qiita.com/nezurika/items/a964e21d3596b0ee4c9a)
+- [BEM によるフロントエンドの設計 第 1 回 基本概念とルール](https://app.codegrid.net/entry/bem-basic-1)
+- [初心者による初心者向けの SMACSS まとめ](https://qiita.com/k_mori/items/7d3da61c712ff9513163)
+- [脱・CSS 無法地帯。FLOCSS で指針のある設計を。](https://qiita.com/sueshin/items/dcbaf3d8a0adb6b087db)
 
 ## BEM
+
 - Block（塊）、Element (要素)、Modifier (修飾) の３つに分ける
-- 命名規則は.block__element--modifierとする
+- 命名規則は.block\_\_element--modifier とする
 - シングルクラス
 
 メモ<br>
-：細かな差分（背景色のみ）などはModifierで切り替えるが複数差分が存在する場合は、シングルクラスの考え方を優先してBlockを分ける<br>
-：ペラ1のLPコーディングなど、小規模・短期間開発時に使用
+：細かな差分（背景色のみ）などは Modifier で切り替えるが複数差分が存在する場合は、シングルクラスの考え方を優先して Block を分ける<br>
+：ペラ 1 の LP コーディングなど、小規模・短期間開発時に使用
 
 ### コード例
 
@@ -56,6 +65,7 @@
 ```
 
 ## OOCSS
+
 - 構造とスキン（見た目）を分離する
 - オブジェクト指向
 - マルチクラス
@@ -97,12 +107,13 @@
 ```
 
 ## SMACSS
-- base/layout/module/state/themeの5つにわける
-- layoutとstateとthemeには接頭語をつける
+
+- base/layout/module/state/theme の 5 つにわける
+- layout と state と theme には接頭語をつける
 - マルチクラス
 
 メモ<br>
-：Layoutsを分けるためdivが増えやすいイメージ。正しいマークアップを望む場合resetCSSが重要<br>
+：Layouts を分けるため div が増えやすいイメージ。正しいマークアップを望む場合 resetCSS が重要<br>
 ：コンポーネントリストを作成する大規模サイト、長期間開発時に使用
 
 ### コード例
@@ -152,17 +163,18 @@
 ```
 
 ## FLOCSS
+
 - OOCSS, SMACSS, BEM, SuitCSS, MCSS の考え方を取り入れた比較的新しいやつ
-- 命名規則はBEM
+- 命名規則は BEM
 - マルチクラス
 
 メモ<br>
-：ディレクトリ構成まで考慮した、設計ではなくCSS「運用」のイメージ<br>
-：大規模サイト・長期間開発時かつSassを用いる開発で使用
+：ディレクトリ構成まで考慮した、設計ではなく CSS「運用」のイメージ<br>
+：大規模サイト・長期間開発時かつ Sass を用いる開発で使用
 
 ### コード例
 
-SMACSSと大きく変わらないので割愛
+SMACSS と大きく変わらないので割愛
 
 ### ディレクトリ例
 
