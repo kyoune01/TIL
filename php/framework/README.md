@@ -1,4 +1,11 @@
-# フレームワーク
+---
+title: "phpFramework"
+slug: "/reading/phpFramework"
+date: "2003-01-00"
+---
+
+## フレームワーク一覧
+
 - Laravel
 - cakephp
 - codeigniter
@@ -6,17 +13,19 @@
 - Smarty
 
 ### 参考
-- [CakePHPとLaravelの比較2018](https://crieit.net/posts/CakePHP-Laravel-2018)
-- [【徹底比較】2019年版PHPフレームワークおすすめランキングTOP5](https://www.sejuku.net/blog/4016)
+
+- [CakePHP と Laravel の比較 2018](https://crieit.net/posts/CakePHP-Laravel-2018)
+- [【徹底比較】2019 年版 PHP フレームワークおすすめランキング TOP5](https://www.sejuku.net/blog/4016)
 
 ## Laravel
-[公式HP](https://laravel.com/)
 
-- 超有名＋開発が楽しいFW
+[公式 HP](https://laravel.com/)
+
+- 超有名＋開発が楽しい FW
 - ディレクトリが煩雑で散らばってるイメージ
-- デフォルトでVueが入ってるなど、フロント側との連携がしやすい
-- cakeのBake的なartisan
-- viewはBlade、ValidationはControllerに書く
+- デフォルトで Vue が入ってるなど、フロント側との連携がしやすい
+- cake の Bake 的な artisan
+- view は Blade、Validation は Controller に書く
 
 デフォルト
 
@@ -43,14 +52,15 @@ Laravel/
 ```
 
 ## cakephp
-[公式HP](https://cakephp.org/jp)
 
-- 綺麗なMVC規約、規約がすべて
-    - Model、View、Controller、役割が全てディレクトリ名なので初心者がとっつきやすい（と思う）
-- 使用感は他FW（Laravel）と同じ
-- Vueなどの連携がない
-- Bakeコマンドで各ファイルを生成できる
-- routingファイルが1つなのでAPIと分けたいときにめんどくさいかも
+[公式 HP](https://cakephp.org/jp)
+
+- 綺麗な MVC 規約、規約がすべて
+  - Model、View、Controller、役割が全てディレクトリ名なので初心者がとっつきやすい（と思う）
+- 使用感は他 FW（Laravel）と同じ
+- Vue などの連携がない
+- Bake コマンドで各ファイルを生成できる
+- routing ファイルが 1 つなので API と分けたいときにめんどくさいかも
 - 「AppController.php」など全ての役割毎に継承元の「App」ファイルが存在する
 
 デフォルト
@@ -114,14 +124,15 @@ cakephp/
 ```
 
 ## codeigniter
-[公式HP](https://www.codeigniter.com/)
 
-- パフォーマンスが良い、ただしFWの恩恵は少ない
+[公式 HP](https://www.codeigniter.com/)
+
+- パフォーマンスが良い、ただし FW の恩恵は少ない
 - コア部分の処理が追いやすい
-- 記事は2015～2017年までの記事が多い印象
+- 記事は 2015 ～ 2017 年までの記事が多い印象
 - composer 対応
 
-デフォルト（composer kenjis使用）
+デフォルト（composer kenjis 使用）
 
 ```
 codeigniter/
@@ -135,20 +146,22 @@ codeigniter/
 ```
 
 ## Symfony
-[公式HP](https://symfony.com/legacy)
 
-- ドメイン駆動設計を推奨（modelがない）
+[公式 HP](https://symfony.com/legacy)
+
+- ドメイン駆動設計を推奨（model がない）
 - サーバインストールで動く、ファイル納品だけでは動かない？
 
-> 比較的規模の大きなWebサービスがSymfonyで作られています<br>
+> 比較的規模の大きな Web サービスが Symfony で作られています  
 > アプリケーションを開発する上で開発と保守を効率化することを目的とし
 
 らしい
 
 ## Smarty
-[公式HP](https://www.smarty.net/docsv2/ja/)
 
-- HTMLテンプレートを使用していた時代に主流だった
+[公式 HP](https://www.smarty.net/docsv2/ja/)
+
+- HTML テンプレートを使用していた時代に主流だった
 - PHP4 から対応
 - composer 未対応
 - いま新規フレームワークとして選ぶ理由は何もない
